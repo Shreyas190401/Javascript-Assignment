@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function numOfVowels() {
+                const string = prompt("Enter string");
+
+                const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+                let countOfVowels = 0;
+
+                let vowelsFound = [];
+
+                for (let i of string) {
+                    if (vowels.includes(i)) {
+                        countOfVowels++;
+                        vowelsFound.push(i);
+                    }
+                }
+                const listOfVowels = vowelsFound.join(",");
+                console.log(
+                    `There are ${countOfVowels} vowels in string (${listOfVowels})`
+                );
+            }
+            numOfVowels();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const string = "Credence Analytics";
+
+            const length = string.length;
+            console.log(`String Length: ${length}`);
+
+            const sliceString = string.slice(8, 18);
+            console.log(`String Slice: ${sliceString}`);
+
+            const substring = string.substring(8, 18);
+            console.log(`String Substring: ${substring}`);
+
+            const substr = string.substr(8, 18);
+            console.log(`String Substr: ${substr}`);
+
+            const replaceString = string.replace("Analytics", "Solutions");
+            console.log(`String Replace: ${replaceString}`);
+
+            //========================================
+            const string2 = "   Credence Analytics   ";
+
+            const trimString = string2.trim();
+            console.log(`String Trim: ${trimString}`);
+
+            const trimStartString = string2.trimStart();
+            console.log(`String TrimStart: ${trimStartString}`);
+
+            const trimEndString = string2.trimEnd();
+            console.log(`String TrimEnd: ${trimEndString}`);
+
+            const padStartString = string.padStart(25, "+");
+            console.log(`String PadStart: ${padStartString}`);
+
+            const padEndString = string.padEnd(25, "*");
+            console.log(`String PadEnd: ${padEndString}`);
+
+            const charAtString = string.charAt(9);
+            console.log(`String CharAt: ${charAtString}`);
+
+            const charCodeAtString = string.charCodeAt(9);
+            console.log(`String CharCodeAt(7): ${charCodeAtString}`);
+
+            //=====================================
+            const string3 = "cat,dog,goat,cow";
+
+            const splitString = string3.split(",");
+            console.log(splitString);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function positiveAndNegative() {
+                const num1 = parseInt(prompt("Enter first number"));
+                const num2 = parseInt(prompt("Enter second number"));
+
+                if (num1 > 0 && num2 > 0) {
+                    console.log(
+                        `first number is positive and second number is also positive`
+                    );
+                } else if (num1 < 0 && num2 < 0) {
+                    console.log(
+                        `first number is negative and second number is also negative`
+                    );
+                } else if (num1 > 0 && num2 < 0) {
+                    console.log(
+                        `first number is positive and second number is negative`
+                    );
+                } else if (num1 < 0 && num2 > 0) {
+                    console.log(
+                        `first number is negative and second number is positive`
+                    );
+                } else {
+                    console.log(`Invalid value`);
+                }
+            }
+            positiveAndNegative();
+        </script>
+    </body>
+</html>

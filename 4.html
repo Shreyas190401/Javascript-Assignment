@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function temperatureConvertor() {
+                const num = prompt("Enter temperature");
+
+                const temperature = parseFloat(num);
+                const unit = num.slice(-1).toUpperCase();
+
+                let result;
+                if (unit === "C") {
+                    const fahrenheit = (temperature * 9) / 5 + 32;
+                    result = fahrenheit.toFixed(2) + "F";
+                } else if (unit === "F") {
+                    const celsius = ((temperature - 32) * 5) / 9;
+                    result = celsius.toFixed(2) + "C";
+                } else {
+                    result = `Invalid input`;
+                }
+                console.log(result);
+            }
+            temperatureConvertor();
+        </script>
+    </body>
+</html>

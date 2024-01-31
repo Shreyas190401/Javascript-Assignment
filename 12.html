@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function subsetString() {
+                const string = prompt("Enter string");
+
+                const subset = [];
+
+                for (let i = 0; i < string.length; i++) {
+                    for (let j = i + 1; j <= string.length; j++) {
+                        subset.push(string.slice(i, j));
+                    }
+                }
+                console.log(subset);
+            }
+            subsetString();
+        </script>
+    </body>
+</html>

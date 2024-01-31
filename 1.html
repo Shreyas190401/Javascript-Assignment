@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function checkDay() {
+                const day = prompt("Enter day");
+                const lowerCaseDay = day.toLowerCase();
+
+                switch (lowerCaseDay) {
+                    case "monday":
+                        console.log(`weekday`);
+                        break;
+                    case "tuesday":
+                        console.log(`weekday`);
+                        break;
+                    case "wednesday":
+                        console.log(`weekday`);
+                        break;
+                    case "thursday":
+                        console.log(`weekday`);
+                        break;
+                    case "friday":
+                        console.log(`weekday`);
+                        break;
+                    case "saturday":
+                        console.log(`weekend`);
+                        break;
+                    case "sunday":
+                        console.log(`weekend`);
+                        break;
+                    default:
+                        console.log(`Please enter correct day`);
+                        break;
+                }
+            }
+            checkDay();
+        </script>
+    </body>
+</html>
